@@ -56,11 +56,9 @@ function reducer(state = initialState, action) {
 }
 
 const store = createStore(reducer);
-console.log(store.getState());
 
 const listener = () => {
   const state = store.getState();
-  console.log(state);
 };
 
 const unsubscribe = store.subscribe(listener);
